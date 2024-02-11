@@ -148,6 +148,7 @@ main{
         row-gap: 10px;
         padding: 20px;
         margin-top: -30px;
+        z-index: 1;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         & h1{
             font-size: 50px;
@@ -158,19 +159,22 @@ main{
         }
     }
     & #span2div2{
-        border: 1px solid none;
         height: 400px;
         width: 500px;
-        background-image: url(tv.png);
-        background-size: contain;
         display: flex;
         align-items: center;
         justify-content: center;
+        img{
+            width: 95%;
+            height: auto;
+            position: relative;
+        }
         & video{
-            height: 360px;
-            width: 360px;
-            margin-top: -40px;
+            position: absolute;
+            height: auto;
+            width: 25%;
             z-index: -1;
+            margin-bottom: 15px;
         }
     }
 }
@@ -293,8 +297,10 @@ main{
         border: 1px solid none;
         height: 320px;
         width: 450px;
-        background-image: url(AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooU.png);
-        background-size: cover;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     & #span5div2{
         border: 1px solid none;
@@ -346,6 +352,9 @@ main{
         margin-top: 40px;
         column-gap: 5px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        p{
+            font-size: 20px;
+        }
         & .inp{
             border: 1px solid rgb(131, 130, 130);
             height: 50px;
@@ -427,7 +436,7 @@ footer{
     }
     }
 }
-@media all and (max-width:1000px) {
+@media all and (max-width:800px) {
     main{
         height: 50vh;
         width: 100vw;
@@ -510,6 +519,9 @@ footer{
         #span2div2{
             height: fit-content;
             width: 100%;
+            video{
+                width: 60%;
+            }
         }
     }
     #span3{
@@ -549,14 +561,91 @@ footer{
         }
     }
     #span4{
-        display: none;
+        height: 300px;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        #span4div1{
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            h1{
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        #span4div2{
+            display: none;
+        }
     }
     #span5{
-        display: none;
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        #span5div2{
+            width: 100%;
+            height: fit-content;
+            margin: auto;
+            display: block;
+            place-items: center;
+            padding: 10px;
+            text-align: center;
+            h1{
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        #span5div1{
+            width: 100%;
+            height: auto;
+        }
     }
     #span6{
-        display: none;
-    }
+        display: grid;
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-wrap: wrap;
+        }
+        #span6div{
+            height: fit-content;
+            width: 80%;
+            margin: auto;
+            padding: 0px 50px;
+            text-align: center;
+            row-gap: 10px;
+            p{
+                font-size: 18px;
+            }
+        }
+        sl-details {
+            width: 100%;
+            font-size: 20px;
+            & p{
+            font-size: 18px;
+            }
+        }
+    } 
     footer{
         display: none;
     }
