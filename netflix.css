@@ -452,7 +452,7 @@ footer{
         }
         ul li a{
             color: rgba(255, 255, 255, 0.7);
-            font-size: 15px;
+            font-size: 13px;
         }
     }
     }
@@ -495,7 +495,10 @@ footer{
             text-wrap: wrap;
             row-gap: 10px;
             h1{
-                font-size: 30px;
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
             }
             #spandiv{
                 width: 100%;
@@ -505,7 +508,7 @@ footer{
                 row-gap: 10px;
                 gap: 5px;
                 p{
-                    font-size: 18px;
+                    font-size: 15px;
                 }
                 button{
                     width: auto;
