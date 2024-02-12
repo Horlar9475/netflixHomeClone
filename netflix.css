@@ -671,7 +671,6 @@ footer{
     footer{
         display: grid;
         width: 100%;
-        border: 1px solid blue;
         height: fit-content;
         align-items: start;
         justify-content: left;
