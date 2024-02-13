@@ -441,7 +441,7 @@ footer{
         padding-top: 20px;
         display: none;
         justify-content: left;
-        column-gap: 30px;
+        column-gap: 40px;
         .footContent1{
             width: fit-content;
             height: fit-content;
@@ -491,7 +491,7 @@ footer{
             width: 100%;
             height: auto;
             position: relative;
-            top: 60%;
+            top: 50%;
             text-align: center;
             text-wrap: wrap;
             row-gap: 10px;
@@ -652,7 +652,7 @@ footer{
         align-items: center;
         justify-content: center;
         h1{
-            font-size: 28px;
+            font-size: 20px;
             margin-bottom: 10px;
             text-align: center;
             text-wrap: wrap;
